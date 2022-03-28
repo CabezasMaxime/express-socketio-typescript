@@ -4,10 +4,11 @@
   "description": "node/express server template with typescript and socket.io",
   "main": "/dist/server.js",
   "scripts": {
+    "build": "tsc",
     "start": "nodemon ./dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
-  "author": "greg-hammond",
+  "author": "cabezas-maxime",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

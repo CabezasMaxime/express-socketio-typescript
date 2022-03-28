@@ -4,7 +4,7 @@ import cors from 'cors'
 import { Server, Socket } from 'socket.io'
 
 const app = express()
-const PORT = 53714
+const PORT = 8080
 app.use(cors())
 
 const server = http.createServer(app)
@@ -32,4 +32,4 @@ io.on("connection", (socket: Socket) => {
     socket.emit("test1", `connected!  socket id = ${socket.id}`)
 })
 
-server.listen(PORT, () => console.log(`started server on ${PORT}`))
+server.listen(PORT, () => console.log(`started server on http://localhost:${PORT}`))
